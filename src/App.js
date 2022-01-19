@@ -42,7 +42,6 @@ function App() {
         <p>2월 14일 발행</p>
         <hr/>
       </div>
-
       <Modal></Modal>
     </div>
   );
