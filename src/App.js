@@ -38,7 +38,7 @@ function App() {
         <hr/>
       </div>
       <div className='list'>
-        <h3>{ 글제목[2] }</h3>
+        <h3>{ 글제목[3] }</h3>
         <p>2월 14일 발행</p>
         <hr/>
       </div>
