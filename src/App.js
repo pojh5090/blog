@@ -42,7 +42,7 @@ function App() {
     </div>
   );
 }
-
+// 깃 커밋 테스트
 function Modal(){
   return (
     <div className="modal">
