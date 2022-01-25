@@ -13,7 +13,7 @@ function App() {
   //   newArray[0] = '여자 코트 추천';
   //   글제목변경(newArray);
   // }
-  //==> 글제목변경(['여자 코트 추천', '강남 우동집', '퇴근하고싶다..', '졸려요']); 와 같음!
+  //==> 글제목변경(['여자 코트 추천', '강남 우동집', '파이썬 독학']); 와 같음!
   //<button style={{ cursor : 'pointer'}} onClick={제목바꾸기}>버튼</button>
 
   return (
@@ -42,7 +42,7 @@ function App() {
     </div>
   );
 }
-// 깃 커밋 테스트2
+
 function Modal(){
   return (
     <div className="modal">
