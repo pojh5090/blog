@@ -1,6 +1,12 @@
 /* eslint-disabled */
 import React, { useState } from 'react';  //react의 내장함수를 쓸게요~
 import './App.css';
+import Button from '@mui/material/Button';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
 
 function App() {
   let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동집', '파이썬 독학']);
@@ -60,6 +66,10 @@ function App() {
         }}>저장</button>
       </div>
 
+      <RadioButtonsGroup style={{ border : '1px solid red'}}></RadioButtonsGroup>
+      
+      <Button variant="contained" style={{width: '300px'}}disabled>Hello World</Button>
+      <br></br>
       <button style={{ cursor : 'pointer'}} onClick={ () => { modal변경(!modal) }}>열고 닫기</button>
 
         <Profile />  
@@ -72,6 +82,24 @@ function App() {
     </div>
   );
 }
+
+function RadioButtonsGroup() {
+  return (
+    <FormControl style={{ border: '1px soild red'}}>
+      <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
+      <RadioGroup
+        aria-labelledby="demo-radio-buttons-group-label"
+        defaultValue="female"
+        name="radio-buttons-group"
+      >
+        <FormControlLabel value="female" control={<Radio />} label="Female" />
+        <FormControlLabel value="male" control={<Radio />} label="Male" />
+        <FormControlLabel value="other" control={<Radio />} label="Other" />
+      </RadioGroup>
+    </FormControl>
+  );
+}
+
 
 function Modal(props){
   return (
