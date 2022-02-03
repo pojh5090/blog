@@ -23,12 +23,12 @@ function App() {
   //   return 어레이;
   // }
 
-  function 글발행하기() {
-    var newArray = [...글제목];
-    var newTitle = 입력값;
-    newArray.push(newTitle);
-    글제목변경(newArray);
-  }
+  // function 글발행하기() {
+  //   var newArray = [...글제목];
+  //   var newTitle = 입력값;
+  //   newArray.push(newTitle);
+  //   글제목변경(newArray);
+  // }
 
   // function 제목바꾸기() {
   //   var newArray = [...글제목];
